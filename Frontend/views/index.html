@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherCast</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="../resource/favicon.ico">
+</head>
+<body>
+    <nav>
+        <ul id="title">
+            <p>WeatherCast</p>
+        </ul>
+        <ul id="input">
+            <button type="submit" id="location-btn">Use Map<i class="fa fa-map-marker" aria-hidden="true"></i> 
+            </button>
+            <input id="input2" type="number" style="font-family: Arial, FontAwesome" type="text"
+            placeholder="Enter Date Range &#xf073;" spellcheck="false">
+            <button id="submit-btn" type="submit"><i class="fa fa-search"></i> Search  
+            </button>
+        </ul>
+    </nav>
+
+    <div id="prefernce">
+        <ul>
+            <li id="today">Today</li>
+            <li id="tomorrow">Tomorrow</li>
+            <li><input id="input3" type="number" style="font-family: Arial, FontAwesome" type="text"
+                placeholder="Jump Date &#10547;" spellcheck="false"></li>
+        </ul>
+    </div>
+    <div id="weather-main-div">
+        <div id="weather-sub-div">
+            <div id="weather-sub-div-id1" class="weather-sub-div-class">
+                <div id="current-loc-head">
+                    <div id="current-loc-sub-head1">
+                        <p id="place">---<span id="place"></span></p>
+                    </div>
+                </div>
+                <div id="current-loc-body">
+                    <p id="current-loc-body-p" style="width: 100%;">Today's Weather for <span id="loc">---</span></p>
+                    <div id="current-loc-sub-body1">
+                        <div class="current-loc-sub-body11">
+                            <div id="temp">
+                                <p>Temparature</p>
+                                <p style="width: 20%;"><img src="../resource/temp.png" alt="" style="height: 20px; width: 20px;"></p>
+                                <p class="value"><span class="value">---</span></p>
+                            </div>
+                            <div id="hum">
+                                <p>Humidity</p>
+                                <p style="width: 20%;"><img src="../resource/humidity_icon.png" alt="" style="height: 20px; width: 20px;"></p>
+                                <p class="value"><span class="value">---</span></p>
+                            </div>
+                            <div id="dew">
+                                <p>Dew Point</p>
+                                <p style="width: 20%;"><img src="../resource/dew.png" alt="" style="height: 20px; width: 20px;"></p>
+                                <p class="value"><span class="value">---</span></p>
+                            </div>
+                            <div id="prec">
+                                <p>Precipitation</p>
+                                <p style="width: 20%;"><img src="../resource/prec.png" alt="" style="height: 20px; width: 20px;"></p>
+                                <p class="value"><span class="value">---</span></p>
+                            </div>
+                            <div id="rain">
+                                <p>Rain</p>
+                                <p style="width: 20%;"><img src="../resource/rainfall.png" alt="" style="height: 20px; width: 20px;"></p>
+                                <p class="value"><span class="value">---</span></p>
+                            </div>
+                        </div>
+                        <div class="current-loc-sub-body11">
+                            <div id="snow">
+                                <p>Snowfall</p>
+                                <p style="width: 20%;"><img src="../resource/snowfall.png" alt="" style="height: 20px; width: 20px;"></p>
+                                <p class="value"><span class="value">---</span></p>
+                            </div>
+                            <div id="pres">
+                                <p>Pressure</p>
+                                <p style="width: 20%;"><img src="../resource/press.png" alt="" style="height: 20px; width: 20px;"></p>
+                                <p class="value"><span class="value">---</span></p>
+                            </div>
+                            <div id="cloud">
+                                <p>Cloud Cover</p>
+                                <p style="width: 20%;"><img src="../resource/cloud.png" alt="" style="height: 25px; width: 25px;"></p>
+                                <p class="value"><span class="value">---</span></p>
+                            </div>
+                            <div id="wind-speed">
+                                <p>Wind Speed</p>
+                                <p style="width: 20%;"><img src="../resource/windSpeed.png" alt="" style="height: 20px; width: 20px;"></p>
+                                <p class="value"><span class="value">---</span></p>
+                            </div>
+                            <div id="wind-direc">
+                                <p>Wind Direction</p>
+                                <p style="width: 20%;"><span style="font-size: 3vh;">&#10613;</span></p>
+                                <p class="value"><span class="value">---</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>

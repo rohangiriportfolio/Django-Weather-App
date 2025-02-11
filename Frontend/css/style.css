@@ -1,0 +1,336 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-image: url('../resource/weather1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Hide number input arrows in Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+li{
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: linear-gradient(rgb(0, 108, 208), #65b4ff);
+    color: white;
+    padding: 0px;
+    height: 10vh;
+    position: fixed;
+    width: 100vw;
+}
+
+#title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 30%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 1vw;
+    font-size: 1.2vw;
+}
+
+#input{
+    display: flex;
+    justify-content: space-between;
+    width: 33vw;
+}
+
+nav ul input, #location-btn, #submit-btn{
+    border: none;
+    height: 50%;
+    width: 20vw;
+    outline: none;
+    border-radius: 30px;
+    background:#b0d9ff57;
+    caret-color: #ffffff;
+    /* text-indent: 1vw; */
+    color: #ffffff;
+    font-size: 1.1vw;
+    /* caret-shape: bar; */
+}
+
+#input1{
+    width: 12.5vw;
+    text-indent: 1vw;
+}
+
+#input2{
+    width: 13.5vw;
+    text-indent: 1vw;
+
+}
+
+#location-btn{
+    width: 9vw;
+    text-indent: 0.2vw;
+    cursor: pointer;
+}
+
+#input3{
+    border: none;
+    height: 60%;
+    width: 9vw;
+    outline: none;
+    border-radius: 30px;
+    background: linear-gradient(145deg, rgb(37, 150, 255), #7ec1ff);
+    caret-color: #ffffff;
+    text-indent: 0.3vw;
+    color: #ffffff;
+    font-size: 1vw;
+    text-indent: 0.5vw;
+
+}
+
+
+#submit-btn{
+    width: 7.5vw;
+    text-indent: 0.2vw;
+    cursor: pointer;
+}
+
+nav ul input::placeholder{
+    color: #ffffff;
+    font-size: 1vw;
+    padding: 0vw 1vw;
+}
+
+#input3::placeholder{
+    color: #ffffff;
+    font-size: 0.9vw;
+    padding: 0vw 1vw;
+}
+
+
+
+/* select {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(0, 132, 255);
+}
+
+option{
+    color: rgb(0, 132, 255);
+}
+
+option:hover{
+    background: linear-gradient(135deg, rgba(123, 191, 255, 0.477), #e9f5ff6e);
+} */
+
+
+nav ul p{
+    font-size: 2vw;
+}
+
+.menu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 17vh;
+    background: linear-gradient(135deg, rgb(0, 132, 255), #4ba8ff);
+    border-radius: 10px;
+    padding: 0px;
+    box-shadow: 0px 5px 10px #e8f4ff6f;
+
+}
+
+.menu li{
+    padding: 0.7vw;
+    font-size: 1.1vw;
+}
+
+.menu.active{
+    display: flex;
+}
+
+#prefernce{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background:#ffffff;
+    height: 6vh;
+    box-shadow: 0px 7px 10px #e8f4ff6f;
+    position: fixed;
+    width: 100vw;
+    top: 10vh;
+}
+
+#prefernce ul{
+    display: flex;
+    width: 20vw;
+    padding-left: 25vw;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+}
+
+#prefernce li{
+    display: flex;
+    align-items: center;
+    color: rgb(0, 132, 255);
+    cursor: pointer;
+    height: 100%;
+    padding: 0vw 0.5vw;
+}
+
+#today:hover, #tomorrow:hover{
+    background: linear-gradient(135deg, rgba(123, 191, 255, 0.477), #e9f5ff6e);
+}
+
+
+
+#weather-main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15vh;
+}
+
+#weather-sub-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    padding-top: 2%;
+
+}
+
+.weather-sub-div-class{
+    background: linear-gradient(135deg, #0084ffc0, #8ec8ffb1);
+    width: 80vw;
+    height: 65vh;
+    margin: 3vw;
+    border-radius: 1vw;
+    box-shadow: 0px 5px 10px #e8f4ff6f;
+
+}
+
+#weather-sub-div-id1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(239, 247, 255);
+}
+
+#weather-sub-div-id2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    color: rgb(239, 247, 255);
+}
+
+#current-loc-head{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    height: 25%;
+    width: 100%;
+    font-size: 2vw;
+    /* padding-top: 5%; */
+    box-shadow: 0px 3px 5px #e8f4ff6f;
+
+}
+
+#current-loc-sub-head1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 60%; */
+    height: 100%;
+    width: 100%;
+}
+
+#current-loc-sub-head2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#current-loc-head p{
+    padding: 1.5vh 10vh;
+}
+
+#current-loc-body{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 75%;
+    width: 100%;
+}
+#current-loc-body-p{
+    padding: 3vh 10vh;
+    padding-bottom: 1vh;
+    font-size: 1.5vw;
+}
+
+/* #current-loc-body div{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5% 6%;
+    width: 100%;
+    height: 2.5vw;
+} */
+
+#current-loc-body p{
+    width: 100%;
+}
+
+#current-loc-sub-body1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.current-loc-sub-body11{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.current-loc-sub-body11 div{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    width: 75%;
+    height: 25%;
+    justify-content: space-evenly;
+    padding: 2vh 1vh;
+}
+.current-loc-sub-body11 p{
+    width: 33%;
+}
