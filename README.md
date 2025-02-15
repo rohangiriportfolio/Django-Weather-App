@@ -2,7 +2,7 @@
 
 ## 📝 Overview:
 
-This Weather App offers weather forecasts and past weather data using Django, Prophet, and Open-Meteo, with various icons representing different weather parameters.
+This Weather App offers weather forecasts by past weather data using Django, Prophet, and Open-Meteo, with various icons representing different weather parameters.
 
 ## 🌟 Features:
 
